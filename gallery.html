@@ -20,7 +20,9 @@
   <link rel="apple-touch-icon" href="assets/img/brand/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;600&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;600&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;600&display=swap"></noscript>
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
@@ -179,7 +181,7 @@
     <div class="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
       <button class="lb__btn lb__close" type="button" aria-label="Close"><svg class="i" aria-hidden="true"><use href="#i-xmark"/></svg></button>
       <button class="lb__btn lb__prev" type="button" aria-label="Previous photo"><svg class="i" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
-      <figure><img src="" alt=""><figcaption></figcaption></figure>
+      <figure><img alt=""><figcaption></figcaption></figure>
       <button class="lb__btn lb__next" type="button" aria-label="Next photo"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
     </div>
 
