@@ -1,0 +1,16 @@
+{
+  "name": "dr-vijay-chile-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:site": "python3 tools/build-site.py",
+    "build:exly": "node tools/build-exly.mjs",
+    "build": "python3 tools/build-site.py && node tools/build-exly.mjs"
+  },
+  "devDependencies": {
+    "acorn": "8.12.1",
+    "acorn-walk": "8.3.4",
+    "esbuild": "0.23.1",
+    "sharp": "0.33.5"
+  }
+}
