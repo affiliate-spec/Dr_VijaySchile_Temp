@@ -155,8 +155,8 @@ h3 { font-size: 1.2rem; letter-spacing: -.01em; }
 .hdr.is-stuck { border-color: var(--line); box-shadow: 0 8px 30px -22px rgba(7, 42, 31, .4); }
 .hdr__in { display: flex; align-items: center; gap: 24px; height: var(--header-h); }
 .brand { display: flex; align-items: center; gap: 12px; flex: none; }
-.brand img { width: 42px; height: 42px; }
-.brand__txt { display: flex; flex-direction: column; line-height: 1.1; }
+.brand__logo { width: auto; height: 46px; }
+.brand__txt { display: flex; flex-direction: column; line-height: 1.1; padding-left: 12px; border-left: 1px solid var(--line); }
 .brand__name { font-family: var(--f-display); font-size: 1.28rem; font-weight: 600; color: var(--ink); letter-spacing: -.01em; }
 .brand__sub { font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--leaf-text); margin-top: 3px; }
 .nav { display: flex; gap: 4px; margin-left: auto; }
@@ -465,6 +465,8 @@ h3 { font-size: 1.2rem; letter-spacing: -.01em; }
 /* 22. FOOTER =============================================================== */
 .ftr { background: var(--forest-deep); color: var(--on-dark-muted); padding: clamp(56px, 8vw, 88px) 0 0; font-size: .95rem; }
 .ftr__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; padding-bottom: 48px; }
+.ftr .brand__logo { box-sizing: content-box; padding: 6px 10px; border-radius: var(--r-sm); background: #fff; }
+.ftr .brand__txt { border-left-color: rgba(255, 255, 255, .18); }
 .ftr .brand__name { color: #fff; }
 .ftr .brand__sub { color: var(--lime); }
 .ftr__about { margin: 18px 0 20px; max-width: 340px; }
@@ -531,7 +533,9 @@ h3 { font-size: 1.2rem; letter-spacing: -.01em; }
   body { font-size: 16px; }
   .topbar__items span:nth-child(n+2) { display: none; }
   .hdr__cta .btn { display: none; }
-  .brand img { width: 38px; height: 38px; }
+  .brand { gap: 10px; }
+  .brand__logo { height: 36px; }
+  .brand__txt { padding-left: 10px; }
   .brand__name { font-size: 1.12rem; }
   .brand__sub { font-size: .62rem; letter-spacing: .12em; }
   .actions .btn { flex: 1 1 100%; }
@@ -553,6 +557,21 @@ h3 { font-size: 1.2rem; letter-spacing: -.01em; }
   .mbar a.wa { color: #18864A; }
   .mbar a.book { background: var(--forest); border-color: var(--forest); color: #fff; }
   .ftr { padding-bottom: 76px; }
+}
+@media (max-width: 380px) {
+  .brand { gap: 8px; }
+  .brand__logo { height: 30px; }
+  .brand__txt { padding-left: 8px; }
+  .brand__name { font-size: 1rem; }
+  .brand__sub { font-size: .56rem; letter-spacing: .08em; }
+}
+@media (max-width: 400px) {
+  .topbar { font-size: .72rem; }
+  .topbar .container { gap: 8px; }
+  .topbar span, .topbar a { gap: 6px; white-space: nowrap; }
+}
+@media (max-width: 340px) {
+  .topbar { font-size: .68rem; }
 }
 
 /* Timings table stacks into cards on phones */
